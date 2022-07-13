@@ -127,3 +127,16 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# CUSTOM ##############
+.vscode/settings.json
+**/*.log
+!.gitkeep
+
+# QGIS Profiles
+profiles/*/python/plugins/
+profiles/*/previewImages/
+*.qgs~
+
+profiles/*/qgis-auth.db
+profiles/*/python/expressions/
