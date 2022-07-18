@@ -1,0 +1,36 @@
+{
+  "name": "axe Loire",
+  "description": "Profil pour les utilisateurs situés sur la Loire aval, De la confluence de l'Indre jusqu'à la mer.",
+  "author": "Emilie BIGORNE",
+  "email": "emilie.bigorne@eptb-loire.fr",
+  "icon": "images/qgis_icon_oslandia.ico",
+  "qgisMinimumVersion": "3.16",
+  "qgisMaximumVersion": "3.26",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "cadastre",
+      "version": "v1.14.2",
+      "url": "https://plugins.qgis.org/plugins/cadastre/version/1.14.2/",
+      "type": "remote"
+    },
+    {
+      "name": "Indicateur SPI",
+      "version": "0.1",
+      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/indic_spi.zip",
+      "type": "remote"
+    },
+    {
+      "name": "piezo stat",
+      "version": "0.2",
+      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
+      "type": "remote"
+    },
+    {
+      "name": "Layers menu from project",
+      "version": "v2.0.3",
+      "url": "https://plugins.qgis.org/plugins/menu_from_project/version/v2.0.3/download/",
+      "type": "remote"
+    }
+  ]
+}
