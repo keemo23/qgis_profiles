@@ -3,7 +3,7 @@
   "description": "Profil pour les utilisateurs situés sur la Loire aval, De la confluence de l'Indre jusqu'à la mer.",
   "author": "Emilie BIGORNE",
   "email": "emilie.bigorne@eptb-loire.fr",
-  "icon": "images/qgis_icon_oslandia.ico",
+  "icon": "images/qgis_icone_eploire.ico",
   "qgisMinimumVersion": "3.16",
   "qgisMaximumVersion": "3.26",
   "version": "1.0.0",

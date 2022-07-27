@@ -1,3 +1,5 @@
+#Création d'une icône
+
 <<<<<<< Updated upstream
 # Profils QGIS déployés à EP Loire
 

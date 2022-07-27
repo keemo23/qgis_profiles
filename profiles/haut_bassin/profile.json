@@ -3,7 +3,7 @@
   "description": "Profil pour les utilisateurs situés sur la haut bassin de la Loire : bassin de l'Allier et de la Loire en amont de leur confluence",
   "author": "Emilie BIGORNE",
   "email": "emilie.bigorne@eptb-loire.fr",
-  "icon": "images/qgis_icon_oslandia.ico",
+  "icon": "images/qgis_icone_eploire.ico",
   "qgisMinimumVersion": "3.16",
   "qgisMaximumVersion": "3.26",
   "version": "1.0.0",
