@@ -25,42 +25,42 @@ steps:
       action: create_or_restore
       include:
         - profile: Loire_aval
-          label: "Loire aval"
+          label: "Qgis Loire aval"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
           icon: "qgis_icone_eploire.ico"
           qgis_path: "%PROGRAMFILES%\\QGIS 3.10\\bin\\qgis-ltr-bin.exe"
         - profile: axe_loire
-          label: "Axe Loire"
+          label: "Qgis Axe Loire"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
           icon: "qgis_icone_eploire.ico"
           qgis_path: "%PROGRAMFILES%\\QGIS 3.10\\bin\\qgis-ltr-bin.exe"
         - profile: cher
-          label: "bassin du Cher"
+          label: "Qgis Bassin du Cher"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
           icon: "qgis_icone_eploire.ico"
           qgis_path: "%PROGRAMFILES%\\QGIS 3.10\\bin\\qgis-ltr-bin.exe"
         - profile: haut_bassin
-          label: "Allier et Loire amont"
+          label: "Qgis Allier et Loire amont"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
           icon: "qgis_icone_eploire.ico"
           qgis_path: "%PROGRAMFILES%\\QGIS 3.10\\bin\\qgis-ltr-bin.exe"
         - profile: maine
-          label: "Bassin de la Maine"
+          label: "Qgis Bassin de la Maine"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
           icon: "qgis_icone_eploire.ico"
           qgis_path: "%PROGRAMFILES%\\QGIS 3.10\\bin\\qgis-ltr-bin.exe"
         - profile: support
-          label: "données essentielles BV Loire"
+          label: "Qgis essentiel BV Loire"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
