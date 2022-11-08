@@ -31,6 +31,12 @@
       "version": "v2.0.3",
       "url": "https://plugins.qgis.org/plugins/menu_from_project/version/v2.0.3/download/",
       "type": "remote"
-    }
+    },
+    {
+      "name": "French Locator Filter",
+      "version": "v1.0.4",
+      "url": "https://gitlab.com/Oslandia/qgis/french_locator_filter/-/archive/master/french_locator_filter-master.zip",
+      "type": "remote"
+    }  
   ]
 }
