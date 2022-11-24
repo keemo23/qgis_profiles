@@ -4,6 +4,7 @@
   "author": "Emilie BIGORNE",
   "email": "emilie.bigorne@eptb-loire.fr",
   "icon": "images/qgis_icone_eploire.ico",
+  "splash": "images/splash_HautBassin.png",
   "qgisMinimumVersion": "3.16",
   "qgisMaximumVersion": "3.26",
   "version": "1.0.0",
