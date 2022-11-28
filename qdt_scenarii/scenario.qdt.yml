@@ -5,7 +5,6 @@ metadata:
     Scénario de deploiement des profils utilisateurs, basés sur des secteurs géographiques.
 
 settings:
-  DEBUG: true
   SCENARIO_VALIDATION: true
 
 
@@ -17,6 +16,7 @@ steps:
       action: download
       source: https://github.com/eptb-loire/qgis_profiles.git
       protocol: git
+      branch: main
       local_destination: ~/.cache/qgis-deployment-toolbelt/eploire/
 
   - name: Set splash screen
