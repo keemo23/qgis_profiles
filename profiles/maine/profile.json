@@ -7,7 +7,7 @@
   "splash": "images/splash_BassinMaine.png",
   "qgisMinimumVersion": "3.16",
   "qgisMaximumVersion": "3.28",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "plugins": [
     {
       "name": "cadastre",
