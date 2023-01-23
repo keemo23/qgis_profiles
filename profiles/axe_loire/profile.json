@@ -7,11 +7,11 @@
   "splash": "images/splash_AxeLoire.png",
   "qgisMinimumVersion": "3.16",
   "qgisMaximumVersion": "3.28",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "plugins": [
     {
       "name": "cadastre",
-      "version": "v1.14.2",
+      "version": "v1.17.1",
       "url": "https://plugins.qgis.org/plugins/cadastre/version/1.14.2/",
       "type": "remote"
     },
@@ -29,7 +29,7 @@
     },
     {
       "name": "Layers menu from project",
-      "version": "v2.0.3",
+      "version": "v2.0.6",
       "url": "https://plugins.qgis.org/plugins/menu_from_project/version/v2.0.3/download/",
       "type": "remote"
     },
