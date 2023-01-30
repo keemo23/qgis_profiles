@@ -13,6 +13,7 @@
       "name": "cadastre",
       "official_repository": true,
       "plugin_id": 397,
+      "url": "https://plugins.qgis.org/plugins/cadastre/version/1.17.2/download/",
       "version": "1.17.2"
     },
     {
