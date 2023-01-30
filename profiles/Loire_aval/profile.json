@@ -7,37 +7,37 @@
   "splash": "images/splash_LoireAval.png",
   "qgisMinimumVersion": "3.16",
   "qgisMaximumVersion": "3.28",
- "version": "2.1.0",
+  "version": "2.1.0",
   "plugins": [
     {
       "name": "cadastre",
       "version": "v1.17.1",
       "url": "https://plugins.qgis.org/plugins/cadastre/version/1.14.2/",
-      "type": "remote"
+      "location": "remote"
     },
     {
       "name": "Indicateur SPI",
       "version": "0.1",
       "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/indic_spi.zip",
-      "type": "remote"
+      "location": "remote"
     },
     {
       "name": "piezo stat",
       "version": "0.2",
       "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
-      "type": "remote"
+      "location": "remote"
     },
     {
       "name": "Layers menu from project",
       "version": "v2.0.6",
       "url": "https://plugins.qgis.org/plugins/menu_from_project/version/v2.0.3/download/",
-      "type": "remote"
+      "location": "remote"
     },
     {
       "name": "French Locator Filter",
       "version": "v1.0.4",
       "url": "https://gitlab.com/Oslandia/qgis/french_locator_filter/-/archive/master/french_locator_filter-master.zip",
-      "type": "remote"
+      "location": "remote"
     }
   ]
 }
