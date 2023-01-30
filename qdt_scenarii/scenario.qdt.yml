@@ -6,10 +6,13 @@ metadata:
 
 settings:
   SCENARIO_VALIDATION: true
-
+  LOCAL_QDT_WORKDIR: ~/.cache/qgis-deployment-toolbelt/eploire/
+  QGIS_EXE_PATH:
+    linux: /usr/bin/qgis
+    mac: /usr/bin/qgis
+    windows: "C:\\QGIS\\3_28\\bin\\qgis-bin.exe"
 
 steps:
-
   - name: Synchronisation des profils depuis le dépôt public
     uses: qprofiles-manager
     with:
@@ -17,12 +20,25 @@ steps:
       source: https://github.com/eptb-loire/qgis_profiles.git
       protocol: git
       branch: main
-      local_destination: ~/.cache/qgis-deployment-toolbelt/eploire/
 
-  - name: Set splash screen
+  - name: Télécharge toutes les versions de tous les plugins listés dans tous les profils
+    uses: qplugins-downloader
+    with:
+      force: false
+      threads: 5
+
+  - name: Synchronise les plugins téléchargés avec ceux installés dans les profils
+    uses: qplugins-synchronizer
+    with:
+      action: create_or_restore
+      profile_ref: downloaded
+      source: ~/.cache/qgis-deployment-toolbelt/plugins
+
+  - name: Installe les écrans de démarrage de QGIS (splash screens) par profil
     uses: splash-screen-manager
     with:
       action: create_or_restore
+      strict: false
 
   - name: Créer des raccourcis pour les profils
     uses: shortcuts-manager
@@ -35,39 +51,33 @@ steps:
           desktop: true
           start_menu: true
           icon: "qgis_icone_eploire.ico"
-          qgis_path: "C:\\QGIS\\3_28\\bin\\qgis-bin.exe"
         - profile: axe_loire
           label: "Qgis Axe Loire"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
           icon: "qgis_icone_eploire.ico"
-          qgis_path: "C:\\QGIS\\3_28\\bin\\qgis-bin.exe"
         - profile: cher
           label: "Qgis Bassin du Cher"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
           icon: "qgis_icone_eploire.ico"
-          qgis_path: "C:\\QGIS\\3_28\\bin\\qgis-bin.exe"
         - profile: haut_bassin
           label: "Qgis Allier et Loire amont"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
           icon: "qgis_icone_eploire.ico"
-          qgis_path: "C:\\QGIS\\3_28\\bin\\qgis-bin.exe"
         - profile: maine
           label: "Qgis Bassin de la Maine"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
           icon: "qgis_icone_eploire.ico"
-          qgis_path: "C:\\QGIS\\3_28\\bin\\qgis-bin.exe"
         - profile: support
           label: "Qgis essentiel BV Loire"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
           icon: "qgis_icone_eploire.ico"
-          qgis_path: "C:\\QGIS\\3_28\\bin\\qgis-bin.exe"
