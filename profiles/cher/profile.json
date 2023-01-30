@@ -19,13 +19,13 @@
       "name": "Indicateur SPI",
       "version": "0.1",
       "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/indic_spi.zip",
-      "location": "remote"
+      "location": "local"
     },
     {
       "name": "piezo stat",
       "version": "0.2",
       "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
-      "location": "remote"
+      "location": "local"
     },
     {
       "name": "Layers menu from project",

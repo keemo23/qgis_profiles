@@ -36,9 +36,9 @@
     },
     {
       "name": "French Locator Filter",
-      "version": "1.0.4",
       "official_repository": true,
-      "plugin_id": 1846
+      "plugin_id": 1846,
+      "version": "1.0.4",
     }
   ]
 }
