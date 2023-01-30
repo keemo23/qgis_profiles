@@ -40,6 +40,13 @@
       "official_repository": true,
       "plugin_id": 1846,
       "version": "1.0.4"
+    },
+    {
+      "name": "First Aid",
+      "folder_name": "firstaid",
+      "official_repository": true,
+      "plugin_id": 885,
+      "version": "2.2.0"
     }
   ]
 }
