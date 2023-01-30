@@ -11,8 +11,9 @@
   "plugins": [
     {
       "name": "cadastre",
-      "version": "1.17.2",
-      "official_repository": true
+      "official_repository": true,
+      "plugin_id": 397,
+      "version": "1.17.2"
     },
     {
       "name": "Indicateur SPI",

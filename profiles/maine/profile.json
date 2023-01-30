@@ -11,9 +11,9 @@
   "plugins": [
     {
       "name": "cadastre",
-      "version": "v1.17.1",
-      "url": "https://plugins.qgis.org/plugins/cadastre/version/1.14.2/",
-      "location": "remote"
+      "official_repository": true,
+      "plugin_id": 397,
+      "version": "1.17.2"
     },
     {
       "name": "Indicateur SPI",
