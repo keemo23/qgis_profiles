@@ -37,6 +37,7 @@
     },
     {
       "name": "French Locator Filter",
+      "folder_name": "french_locator_filter",
       "version": "1.0.4",
       "official_repository": true,
       "plugin_id": 1846
