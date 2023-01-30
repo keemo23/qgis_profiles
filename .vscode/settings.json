@@ -1,0 +1,20 @@
+{
+    // Editor
+    "editor.rulers": [
+        100
+    ],
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "requirements*.txt": "pip-requirements"
+    },
+    // Extensions
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/Guts/qgis-deployment-cli/main/docs/schemas/schema.json": [
+            "**/*scenario*qdt.yml",
+            "tests/fixtures/scenarios/*.qdt.yml",
+        ]
+    },
+    "git.enableCommitSigning": false
+}

@@ -129,7 +129,6 @@ dmypy.json
 .pyre/
 
 # CUSTOM ##############
-.vscode/settings.json
 **/*.log
 !.gitkeep
 
