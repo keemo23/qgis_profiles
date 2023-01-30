@@ -28,15 +28,16 @@
     },
     {
       "name": "Layers menu from project",
-      "version": "v2.0.6",
-      "url": "https://plugins.qgis.org/plugins/menu_from_project/version/v2.0.3/download/",
-      "location": "remote"
+      "folder_name": "menu_from_project",
+      "official_repository": true,
+      "plugin_id": 43,
+      "version": "v2.0.6"
     },
     {
       "name": "French Locator Filter",
-      "version": "v1.0.4",
-      "url": "https://gitlab.com/Oslandia/qgis/french_locator_filter/-/archive/master/french_locator_filter-master.zip",
-      "location": "remote"
+      "version": "1.0.4",
+      "official_repository": true,
+      "plugin_id": 1846
     }
   ]
 }
