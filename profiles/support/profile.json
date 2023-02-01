@@ -18,13 +18,13 @@
     {
       "name": "Indicateur SPI",
       "version": "0.1",
-      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/indic_spi.zip",
+      "url": "\\SRV-fic01/DDRE/Commun_DDRE/donnees&outils/Consult_donnees/plugin/indic_spi.zip",
       "location": "local"
     },
     {
       "name": "piezo stat",
       "version": "0.2",
-      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
+      "url": "\\SRV-fic01/DDRE/Commun_DDRE/donnees&outils/Consult_donnees/plugin//piezo_stat.zip",
       "location": "local"
     },
     {
