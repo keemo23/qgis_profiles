@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/Guts/qgis-deployment-cli/main/docs/schemas/profile/qgis_profile.json",
   "name": "cher",
   "description": "Profil pour les utilisateurs situés sur le bassin du Cher.",
   "author": "Emilie BIGORNE",

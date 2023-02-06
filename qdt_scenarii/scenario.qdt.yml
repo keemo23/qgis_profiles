@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Guts/qgis-deployment-cli/main/docs/schemas/scenario/schema.json
+
 metadata:
   title: "Profile EP Loire"
   id: eploire_utilisateur
@@ -50,19 +52,19 @@ steps:
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
-          icon: "qgis_icone_eploire.ico"       
+          icon: "qgis_icone_eploire.ico"
         - profile: cher
           label: "Qgis Bassin du Cher"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
-          icon: "qgis_icone_eploire.ico"  
+          icon: "qgis_icone_eploire.ico"
         - profile: haut_bassin
           label: "Qgis Allier et Loire amont"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
-          icon: "qgis_icone_eploire.ico"                   
+          icon: "qgis_icone_eploire.ico"
         - profile: loire_aval
           label: "Qgis Loire aval"
           additional_arguments: "--noversioncheck"
