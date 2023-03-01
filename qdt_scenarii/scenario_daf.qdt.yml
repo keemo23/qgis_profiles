@@ -1,0 +1,53 @@
+metadata:
+  title: "Profil DAF EPLoire"
+  id: eploire_daf
+  description: >-
+    Scénario de deploiement des profils utilisateurs pour les agents de la DAF.
+
+settings:
+  LOCAL_QDT_WORKDIR: ~/.cache/qgis-deployment-toolbelt/eploire/
+  QGIS_EXE_PATH:
+    linux: /usr/bin/qgis
+    mac: /usr/bin/qgis
+    windows: "C:\\QGIS\\3_22\\bin\\qgis-bin.exe"
+  SCENARIO_VALIDATION: true
+
+steps:
+  - name: Synchronisation des profils depuis le dépôt public
+    uses: qprofiles-manager
+    with:
+      action: download
+      source: https://github.com/eptb-loire/qgis_profiles.git
+      protocol: git
+      branch: main
+
+  - name: Télécharge toutes les versions de tous les plugins listés dans tous les profils
+    uses: qplugins-downloader
+    with:
+      force: false
+      threads: 5
+
+  - name: Synchronise les plugins téléchargés avec ceux installés dans les profils
+    uses: qplugins-synchronizer
+    with:
+      action: create_or_restore
+      profile_ref: downloaded
+      source: ~/.cache/qgis-deployment-toolbelt/plugins
+
+  - name: Installe les écrans de démarrage de QGIS (splash screens) par profil
+    uses: splash-screen-manager
+    with:
+      action: create_or_restore
+      strict: false
+
+  - name: Créer des raccourcis pour les profils
+    uses: shortcuts-manager
+    with:
+      action: create_or_restore
+      include:
+        - profile: cadastre
+          label: "Qgis Consultation cadastre"
+          additional_arguments: "--noversioncheck"
+          desktop: true
+          start_menu: true
+          icon: "qgis_icone_eploire.ico"

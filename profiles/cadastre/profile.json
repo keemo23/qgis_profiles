@@ -1,0 +1,33 @@
+{
+  "name": "cadastre",
+  "description": "Profil avec droits de lecture sur le cadastre et interface simplifiée",
+  "author": "Emilie BIGORNE",
+  "email": "emilie.bigorne@eptb-loire.fr",
+  "icon": "images/qgis_icone_eploire.ico",
+  "splash": "images/splash_BVLoire.png",
+  "qgisMinimumVersion": "3.16",
+  "qgisMaximumVersion": "3.28",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "cadastre",
+      "official_repository": true,
+      "plugin_id": 397,
+      "version": "1.17.3"
+    },
+    {
+      "name": "Layers menu from project",
+      "folder_name": "menu_from_project",
+      "official_repository": true,
+      "plugin_id": 43,
+      "version": "v2.0.6"
+    },
+    {
+      "name": "French Locator Filter",
+      "folder_name": "french_locator_filter",
+      "official_repository": true,
+      "plugin_id": 1846,
+      "version": "1.0.4"
+    }
+  ]
+}

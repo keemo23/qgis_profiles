@@ -9,7 +9,7 @@ settings:
   QGIS_EXE_PATH:
     linux: /usr/bin/qgis
     mac: /usr/bin/qgis
-    windows: "C:\\QGIS\\3_28\\bin\\qgis-bin.exe"
+    windows: "C:\\QGIS\\3_22\\bin\\qgis-bin.exe"
   SCENARIO_VALIDATION: true
 
 steps:
@@ -50,19 +50,19 @@ steps:
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
-          icon: "qgis_icone_eploire.ico"       
+          icon: "qgis_icone_eploire.ico"
         - profile: cher
           label: "Qgis Bassin du Cher"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
-          icon: "qgis_icone_eploire.ico"  
+          icon: "qgis_icone_eploire.ico"
         - profile: haut_bassin
           label: "Qgis Allier et Loire amont"
           additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
-          icon: "qgis_icone_eploire.ico"                   
+          icon: "qgis_icone_eploire.ico"
         - profile: loire_aval
           label: "Qgis Loire aval"
           additional_arguments: "--noversioncheck"
