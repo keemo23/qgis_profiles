@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/Guts/qgis-deployment-cli/main/docs/schemas/profile/qgis_profile.json",
   "name": "support",
   "description": "Profil avec des données sur tout le bassin de la Loire et ses affluents",
   "author": "Emilie BIGORNE",

@@ -1,5 +1,4 @@
 {
-    // Editor
     "editor.rulers": [
         100
     ],
@@ -9,9 +8,8 @@
     "files.associations": {
         "requirements*.txt": "pip-requirements"
     },
-    // Extensions
     "yaml.schemas": {
-        "https://raw.githubusercontent.com/Guts/qgis-deployment-cli/main/docs/schemas/schema.json": [
+        "https://raw.githubusercontent.com/Guts/qgis-deployment-cli/main/docs/schemas/scenario/schema.json": [
             "**/*scenario*qdt.yml"
         ]
     },

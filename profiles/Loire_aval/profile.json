@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/Guts/qgis-deployment-cli/main/docs/schemas/profile/qgis_profile.json",
   "name": "loire_aval",
   "description": "Profil pour les utilisateurs situés sur la Loire aval, De la confluence de l'Indre jusqu'à la mer.",
   "author": "Emilie BIGORNE",
