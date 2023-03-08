@@ -20,7 +20,7 @@ steps:
       source: https://github.com/eptb-loire/qgis_profiles.git
       protocol: git
       branch: main
-      sync_mode: only_different_version
+      sync_mode: overwrite
 
   - name: Télécharge toutes les versions de tous les plugins listés dans tous les profils
     uses: qplugins-downloader
