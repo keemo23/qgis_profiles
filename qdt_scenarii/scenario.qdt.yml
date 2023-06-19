@@ -34,7 +34,6 @@ steps:
     uses: qplugins-synchronizer
     with:
       action: create_or_restore
-      profile_ref: downloaded
       source: ~/.cache/qgis-deployment-toolbelt/plugins
 
   - name: Installe les écrans de démarrage de QGIS (splash screens) par profil

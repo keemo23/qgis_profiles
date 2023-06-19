@@ -18,15 +18,15 @@
     },
     {
       "name": "Indicateur SPI",
-      "folder_name":"indic_spi",
-      "official_repository":false,
+      "folder_name": "indic_spi",
+      "official_repository": false,
       "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/indic_spi.zip",
       "location": "local"
     },
     {
       "name": "piezo stat",
-      "folder_name":"piezo_stat",
-      "official_repository":false,
+      "folder_name": "piezo_stat",
+      "official_repository": false,
       "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
       "location": "local"
     },
@@ -35,7 +35,7 @@
       "folder_name": "menu_from_project",
       "official_repository": true,
       "plugin_id": 43,
-      "version": "vv2.0.6"
+      "version": "v2.0.6"
     },
     {
       "name": "French Locator Filter",
