@@ -27,13 +27,13 @@ steps:
   - name: Télécharge toutes les versions de tous les plugins listés dans tous les profils
     uses: qplugins-downloader
     with:
-      force: false
+      force: true
       threads: 5
 
   - name: Synchronise les plugins téléchargés avec ceux installés dans les profils
     uses: qplugins-synchronizer
     with:
-      action: create_or_restore
+      action: remove
       source: ~/.cache/qgis-deployment-toolbelt/plugins
 
   - name: Installe les écrans de démarrage de QGIS (splash screens) par profil

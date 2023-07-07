@@ -16,14 +16,7 @@
       "plugin_id": 397,
       "version": "1.17.3"
     },
-    {
-      "name": "Indicateur SPI",
-      "folder_name": "indic_spi",
-      "version":"0.1.1",
-      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/indic_spi.zip",
-      "location": "local",
-      "official_repository": false
-    },
+
     {
       "name": "piezo_stat",
       "folder_name": "piezo_stat",
