@@ -8,7 +8,7 @@
   "splash": "images/splash_BVLoire.png",
   "qgisMinimumVersion": "3.16",
   "qgisMaximumVersion": "3.28",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "plugins": [
     {
       "name": "cadastre",
@@ -29,7 +29,14 @@
       "official_repository": false,
       "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
       "location": "local"
-    },
+    },  
+    {
+      "name": "pg_metadata",
+      "version":"1.2.1",
+      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/pg_metadata-1.2.2.zip",
+      "location": "local",
+      "official_repository": false 
+    }  ,
     {
       "name": "Layers menu from project",
       "folder_name": "menu_from_project",
