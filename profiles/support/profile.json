@@ -18,6 +18,7 @@
     },
     {
       "name": "Indicateur SPI",
+      "folder_name": "indic_spi",
       "version":"0.1.0",
       "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/indic_spi.zip",
       "location": "local",
@@ -25,6 +26,7 @@
     },
     {
       "name": "piezo_stat",
+      "folder_name": "piezo_stat",
       "version":"0.2.0",
       "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
       "location": "local",
