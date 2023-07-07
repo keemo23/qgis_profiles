@@ -29,7 +29,7 @@
       "folder_name": "piezo_stat",
       "version":"0.2.0",
       "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
-      "location": "local",
+      "location": "remote",
       "official_repository": false
     },  
 
