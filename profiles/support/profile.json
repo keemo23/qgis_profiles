@@ -8,7 +8,7 @@
   "splash": "images/splash_BVLoire.png",
   "qgisMinimumVersion": "3.16",
   "qgisMaximumVersion": "3.28",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "plugins": [
     {
       "name": "cadastre",
