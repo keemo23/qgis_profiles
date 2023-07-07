@@ -19,19 +19,26 @@
     {
       "name": "Indicateur SPI",
       "folder_name": "indic_spi",
-      "version":"0.1.0",
-      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/indic_spi.zip",
-      "location": "local",
-      "official_repository": false
-    },
-    {
-      "name": "piezo stat",
-      "folder_name": "piezo_stat",
       "official_repository": false,
-      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
+      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/indic_spi.zip",
       "location": "local"
     },
-
+    {
+      "name": "piezo_stat",
+      "folder_name": "piezo_stat",
+      "version":"0.2.0",
+      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
+      "location": "local",
+       "official_repository": false
+    },  
+    {
+      "name": "pg_metadata",
+      "folder_name":"pg_metadata",
+      "version":"1.2.1",
+      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/pg_metadata-1.2.2.zip",
+      "location": "local",
+      "official_repository": false 
+    }  ,
     {
       "name": "Layers menu from project",
       "folder_name": "menu_from_project",
