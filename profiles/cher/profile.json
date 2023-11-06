@@ -8,13 +8,13 @@
   "splash": "images/splash_BassinCher.png",
   "qgisMinimumVersion": "3.16",
   "qgisMaximumVersion": "3.28",
-  "version": "2.3.3",
+  "version": "2.4.1",
   "plugins": [
     {
       "name": "cadastre",
       "official_repository": true,
       "plugin_id": 397,
-      "version": "1.17.3"
+      "version": "1.18.2"
     },
 
     {
