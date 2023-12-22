@@ -8,7 +8,7 @@
   "splash": "images/splash_AxeLoire.png",
   "qgisMinimumVersion": "3.16",
   "qgisMaximumVersion": "3.28",
-  "version": "2.1.0",
+  "version": "2.5.0",
   "plugins": [
     {
       "name": "cadastre",
@@ -39,5 +39,14 @@
       "official_repository": true,
       "plugin_id": 1846
     }
+    ,
+    {
+      "name": "Quoi de neuf carto",
+      "folder_name": "nouveau_eploire",
+      "version":"0.1.1",
+      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/nouveau_eploire.zip",
+      "location": "local",
+       "official_repository": false
+    }    
   ]
 }
