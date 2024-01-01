@@ -24,7 +24,7 @@
       "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
       "location": "local",
        "official_repository": false
-    },  
+    },
     {
       "name": "Layers menu from project",
       "folder_name": "menu_from_project",
@@ -47,6 +47,6 @@
       "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/nouveau_eploire.zip",
       "location": "local",
        "official_repository": false
-    }    
+    }
   ]
 }

@@ -41,7 +41,7 @@ if (-Not($QGIS_MSI_INSTALL))
 else
 {
     #Write-Host "$QGIS_MSI_INSTALL"
-    $QGIS_MSI_INSTALL_FILE =  Get-ChildItem -Path  $QGIS_MSI_INSTALL -Recurse -include "*.latest.msi" 
+    $QGIS_MSI_INSTALL_FILE =  Get-ChildItem -Path  $QGIS_MSI_INSTALL -Recurse -include "*.latest.msi"
     $QGIS_MSI_INSTALL_FILE -match "\-\d{1,2}\.\d{1,2}"
     #$QGIS_VERSION=$matches[0].substring(1) -replace('\.','_')
     # Verification that the .msi file exists
