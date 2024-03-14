@@ -16,8 +16,8 @@
 ### Cloner ou télécharger ce dépôt
 
 ```sh
-git clone https://github.com/geotribu/profils-qgis.git geotribu-profils-qgis
-cd geotribu-profils-qgis
+git clone https://github.com/eptb-loire/qgis_profiles.git ep-loire-profils-qgis
+cd ep-loire-profils-qgis
 ```
 
 ### Installer QDT
@@ -29,14 +29,36 @@ python -m pip install -U pip setuptools wheel
 pip install -U -r requirements.txt
 ```
 
-### Exécuter QDT avec le scénario Geotribu
+### Exécuter QDT avec un scénario de ce dépôt
 
 ```sh
-qgis-deployment-toolbelt -v -s qdt/scenario.qdt.yml
+qgis-deployment-toolbelt -v -s qdt_scenarii/scenario.qdt.yml
 ```
 
 ----
 
-## Développement
+## Guide de contribution
 
-- installer pre-commit et les git hooks
+Création d'un environnement virtuel Python :
+
+```sh
+python -m venv .venv
+# Sur Windows :
+# py -3 -m venv .venv
+```
+
+Activer l'environnement virtuel :
+
+```sh
+. .venv/bin/activate
+# Sur Windows :
+# .venv/Scripts/activate
+```
+
+Installation des dépendances :
+
+```sh
+python -m pip install -U pip setuptools wheel
+pip install -U -r requirements.txt
+pre-commit install
+```
