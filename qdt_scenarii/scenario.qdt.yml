@@ -1,13 +1,12 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Guts/qgis-deployment-cli/main/docs/schemas/scenario/schema.json
 
 metadata:
-  title: "Profile EP Loire"
+  title: "Profils QGIS EP Loire"
   id: eploire_utilisateur
   description: >-
     Scénario de deploiement des profils utilisateurs, basés sur des secteurs géographiques.
 
 settings:
-  LOCAL_QDT_WORKDIR: ~/.cache/qgis-deployment-toolbelt/eploire/
   QGIS_EXE_PATH:
     linux: /usr/bin/qgis
     mac: /usr/bin/qgis
@@ -15,13 +14,16 @@ settings:
   SCENARIO_VALIDATION: true
 
 steps:
-  - name: Synchronisation des profils depuis le dépôt public
-    uses: qprofiles-manager
+  - name: Téléchargement des profils depuis le dépôt public
+    uses: qprofiles-downloader
     with:
-      action: download
-      source: https://github.com/eptb-loire/qgis_profiles.git
-      protocol: git
       branch: main
+      protocol: git_remote
+      source: https://github.com/eptb-loire/qgis_profiles.git
+
+  - name: Synchronisation des profils installés à partir des téélchargés
+    uses: qprofiles-synchronizer
+    with:
       sync_mode: only_different_version
 
   - name: Télécharge toutes les versions de tous les plugins listés dans tous les profils
