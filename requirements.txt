@@ -1,0 +1,3 @@
+check-jsonschema[formats]>=0.28.0,<1
+pre-commit>=3.5,<4
+qgis-deployment-toolbelt>=0.31.2,<0.32
