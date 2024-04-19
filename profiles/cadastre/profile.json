@@ -20,14 +20,14 @@
       "folder_name": "menu_from_project",
       "official_repository": true,
       "plugin_id": 43,
-      "version": "v2.0.6"
+      "version": "v2.0.8"
     },
     {
       "name": "French Locator Filter",
       "folder_name": "french_locator_filter",
+      "version": "1.0.4",
       "official_repository": true,
-      "plugin_id": 1846,
-      "version": "1.0.4"
+      "plugin_id": 1846
     }
   ]
 }
