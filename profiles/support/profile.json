@@ -6,6 +6,8 @@
   "email": "emilie.bigorne@eptb-loire.fr",
   "icon": "images/qgis_icone_eploire.ico",
   "splash": "images/splash_BVLoire.png",
+  "qgisMinimumVersion": "3.16",
+  "qgisMaximumVersion": "3.28",
   "version": "3.3.0",
   "plugins": [
     {
@@ -13,7 +15,7 @@
       "official_repository": true,
       "plugin_id": 397,
       "version": "1.19.1"
-    }
+    },
     {
       "name": "Layers menu from project",
       "folder_name": "menu_from_project",
