@@ -6,9 +6,7 @@
   "email": "emilie.bigorne@eptb-loire.fr",
   "icon": "images/qgis_icone_eploire.ico",
   "splash": "images/splash_BVLoire.png",
-  "qgisMinimumVersion": "3.16",
-  "qgisMaximumVersion": "3.28",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "plugins": [
     {
       "name": "cadastre",
@@ -18,35 +16,26 @@
     },
 
     {
-      "name": "piezo_stat",
-      "folder_name": "piezo_stat",
-      "version":"0.2.1",
-      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
-      "location": "local",
-       "official_repository": false
-    },  
-    {
       "name": "Layers menu from project",
       "folder_name": "menu_from_project",
       "official_repository": true,
       "plugin_id": 43,
-      "version": "v2.0.8"
+      "version": "2.1.0"
     },
     {
       "name": "French Locator Filter",
       "folder_name": "french_locator_filter",
+      "version": "1.1.0",
       "official_repository": true,
-      "plugin_id": 1846,
-      "version": "1.0.4"
+      "plugin_id": 1846
     }
     ,
     {
-      "name": "Quoi de neuf carto",
-      "folder_name": "nouveau_eploire",
-      "version":"0.1.1",
-      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/nouveau_eploire.zip",
-      "location": "local",
-       "official_repository": false
-    }
+      "name": "Custom News Feed",
+      "folder_name": "custom_news_feed",
+      "official_repository": true,
+      "plugin_id": 2691,
+      "version": "1.2.3"
+    }  
   ]
 }

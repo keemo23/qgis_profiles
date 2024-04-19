@@ -7,22 +7,18 @@ metadata:
     Scénario de deploiement des profils utilisateurs, basés sur des secteurs géographiques.
 
 settings:
-  LOCAL_QDT_WORKDIR: ~/.cache/qgis-deployment-toolbelt/eploire/
-  QGIS_EXE_PATH:
-    linux: /usr/bin/qgis
-    mac: /usr/bin/qgis
-    windows: "C:\\QGIS\\3_28\\bin\\qgis-ltr-bin.exe"
+  DEBUG: false
+  LOCAL_WORK_DIR: ~/.cache/qgis-deployment-toolbelt/eploire/
   SCENARIO_VALIDATION: true
 
 steps:
-  - name: Synchronisation des profils depuis le dépôt public
-    uses: qprofiles-manager
+  - name: Find installed QGIS
+    uses: qgis-installation-finder
     with:
-      action: download
-      source: https://github.com/eptb-loire/qgis_profiles.git
-      protocol: git
-      branch: main
-      sync_mode: only_different_version
+      version_priority:
+        - "3.34"
+        - "3.28"
+      if_not_found: error
 
   - name: Télécharge toutes les versions de tous les plugins listés dans tous les profils
     uses: qplugins-downloader
@@ -33,14 +29,19 @@ steps:
   - name: Synchronise les plugins téléchargés avec ceux installés dans les profils
     uses: qplugins-synchronizer
     with:
-      action: remove
-      source: ~/.cache/qgis-deployment-toolbelt/plugins
-
-  - name: Installe les écrans de démarrage de QGIS (splash screens) par profil
-    uses: splash-screen-manager
-    with:
       action: create_or_restore
-      strict: false
+      source: ~/.cache/qgis-deployment-toolbelt/plugins  
+  - name: Download profiles from remote Git server
+    uses: qprofiles-downloader
+    with:
+      branch: main
+      protocol: git_remote
+      source: https://github.com/eptb-loire/qgis_profiles.git
+
+  - name: Synchronize installed profiles from downloaded ones
+    uses: qprofiles-synchronizer
+    with:
+      sync_mode: only_different_version
 
   - name: Créer des raccourcis pour les profils
     uses: shortcuts-manager
@@ -83,3 +84,11 @@ steps:
           desktop: true
           start_menu: true
           icon: "qgis_icone_eploire.ico"
+
+  - name: Installe les écrans de démarrage de QGIS (splash screens) par profil
+    uses: splash-screen-manager
+    with:
+      action: create_or_restore
+      strict: false
+
+
