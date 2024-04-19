@@ -32,11 +32,11 @@
     }
     ,
     {
-      "name": "Custom News Feed",
-      "folder_name": "custom_news_feed",
+      "name": "custom_news_feed",
       "official_repository": true,
-      "plugin_id": 2691,
-      "version": "v1.2.3"
+      "url": "https://plugins.qgis.org/plugins/custom_news_feed/version/v1.2.3/download/",
+      "location": "remote",
+      "version": "1.2.3"
     }  
   ]
 }
