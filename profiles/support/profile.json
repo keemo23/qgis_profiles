@@ -6,7 +6,7 @@
   "email": "emilie.bigorne@eptb-loire.fr",
   "icon": "images/qgis_icone_eploire.ico",
   "splash": "images/splash_BVLoire.png",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "plugins": [
     {
       "name": "cadastre",
