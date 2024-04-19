@@ -29,13 +29,6 @@
       "official_repository": true,
       "plugin_id": 1846
     }
-    ,
-    {
-      "name": "custom_news_feed",
-      "official_repository": true,
-      "url": "https://plugins.qgis.org/plugins/custom_news_feed/version/v1.2.3/download/",
-      "location": "remote",
-      "version": "1.2.3"
-    }  
+
   ]
 }
