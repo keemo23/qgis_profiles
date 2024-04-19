@@ -14,7 +14,7 @@
       "name": "cadastre",
       "official_repository": true,
       "plugin_id": 397,
-      "version": "1.17.3"
+      "version": "1.19.1"
     },
     {
       "name": "Layers menu from project",
@@ -26,9 +26,17 @@
     {
       "name": "French Locator Filter",
       "folder_name": "french_locator_filter",
-      "version": "1.0.4",
+      "version": "1.1.0",
       "official_repository": true,
       "plugin_id": 1846
     }
+    ,
+    {
+      "name": "Custom News Feed",
+      "folder_name": "custom_news_feed",
+      "official_repository": true,
+      "plugin_id": 2691,
+      "version": "1.2.3"
+    }  
   ]
 }
