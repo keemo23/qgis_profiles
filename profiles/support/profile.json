@@ -16,6 +16,14 @@
     },
 
     {
+      "name": "piezo_stat",
+      "folder_name": "piezo_stat",
+      "version":"0.2.1",
+      "url": "S:/Commun_DDRE/donnees&outils/Consult_donnees/plugin/piezo_stat.zip",
+      "location": "local",
+       "official_repository": false
+    },
+    {
       "name": "Layers menu from project",
       "folder_name": "menu_from_project",
       "official_repository": true,
