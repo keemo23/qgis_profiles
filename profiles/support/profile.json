@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/Guts/qgis-deployment-cli/main/docs/schemas/profile/qgis_profile.json",
-  "name": "support",
+  "name": "EPLoire_support",
   "folder_name": "support",
   "description": "Test support.",
   "author": "Julien Moura",
