@@ -6,6 +6,7 @@
   "author": "Emilie BIGORNE",
   "email": "emilie.bigorne@eptb-loire.fr",
   "icon": "images/qgis_icone_eploire.ico",
+  "splash": "images/splash_BVLoire.png",
   "qgisMinimumVersion": "3.28.4",
   "qgisMaximumVersion": "3.99.10",
   "version": "1.1.0",
