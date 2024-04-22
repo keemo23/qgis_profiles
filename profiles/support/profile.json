@@ -5,7 +5,7 @@
   "description": "Test support",
   "author": "Emilie BIGORNE",
   "email": "emilie.bigorne@eptb-loire.fr",
-  "icon": "qgis_icone_eploire.ico",
+  "icon": "images/qgis_icone_eploire.ico",
   "qgisMinimumVersion": "3.28.4",
   "qgisMaximumVersion": "3.99.10",
   "version": "1.1.0",
