@@ -9,7 +9,7 @@
   "splash": "images/splash_BVLoire.png",
   "qgisMinimumVersion": "3.28.4",
   "qgisMaximumVersion": "3.99.10",
-  "version": "1.1.0",
+  "version": "3.0.0",
   "plugins": [
     {
       "name": "Layers menu from project",
