@@ -6,12 +6,32 @@ metadata:
   description: >-
     Scénario de deploiement des profils utilisateurs, basés sur des secteurs géographiques.
 
+# Toolbelt settings
 settings:
-  DEBUG: false
-  LOCAL_WORK_DIR: ~/.cache/qgis-deployment-toolbelt/eploire/
+  # LOCAL_WORK_DIR: ~/.cache/qgis-deployment-toolbelt/demo/
   SCENARIO_VALIDATION: true
 
+# Deployment workflow, step by step
 steps:
+
+  - name: Set environment variables
+    uses: manage-env-vars
+    with:
+      - name: QDT_QGIS_EXE_PATH 
+        action: "add"
+        scope: "user"
+        value: "C:\\QGIS\\3_28\\bin\\qgis-ltr-bin.exe"
+        value_type: path
+
+  - name: Set environment variables
+    uses: manage-env-vars
+    with:
+      - name: QDT_QGIS_EXE_PATH  
+        action: "add"
+        scope: "user"
+        value: "C:\\QGIS\\3_34\\bin\\qgis-ltr-bin.exe"
+        value_type: path
+
   - name: Find installed QGIS
     uses: qgis-installation-finder
     with:
@@ -20,75 +40,78 @@ steps:
         - "3.28"
       if_not_found: error
 
-  - name: Télécharge toutes les versions de tous les plugins listés dans tous les profils
+  - name: Download profiles from remote git repository
+    uses: qprofiles-downloader
+    with:
+      source: https://github.com/eptb-loire/qgis_profiles.git
+      protocol: git_remote
+      branch: main
+
+  - name: Download profiles from remote git repository
+    uses: qprofiles-synchronizer
+    with:
+      sync_mode: overwrite
+
+  - name: Download plugins
     uses: qplugins-downloader
     with:
-      force: true
+      force: false
       threads: 5
 
-  - name: Synchronise les plugins téléchargés avec ceux installés dans les profils
+  - name: Synchronize plugins
     uses: qplugins-synchronizer
     with:
       action: create_or_restore
-      source: ~/.cache/qgis-deployment-toolbelt/plugins  
-  - name: Download profiles from remote Git server
-    uses: qprofiles-downloader
-    with:
-      branch: main
-      protocol: git_remote
-      source: https://github.com/eptb-loire/qgis_profiles.git
 
-  - name: Synchronize installed profiles from downloaded ones
-    uses: qprofiles-synchronizer
-    with:
-      sync_mode: only_different_version
-
-  - name: Créer des raccourcis pour les profils
+  - name: Create shortcuts for profiles
     uses: shortcuts-manager
     with:
       action: create_or_restore
       include:
+        - profile: EP Loire support
+          label: "Qgis essentiel BV Loire"
+          desktop: true
+          start_menu: true
+          additional_arguments: "--noversioncheck"
+          action: create_or_restore
+          icon: "images/qgis_icone_eploire.ico"
         - profile: axe_loire
           label: "Qgis Axe Loire"
-          additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
-          icon: "qgis_icone_eploire.ico"
+          additional_arguments: "--noversioncheck"
+          action: create_or_restore
+          icon: "images/qgis_icone_eploire.ico"
         - profile: cher
-          label: "Qgis Bassin du Cher"
-          additional_arguments: "--noversioncheck"
+          label: "Qgis bassin du Cher"
           desktop: true
           start_menu: true
-          icon: "qgis_icone_eploire.ico"
+          additional_arguments: "--noversioncheck"
+          action: create_or_restore
+          icon: "images/qgis_icone_eploire.ico"    
         - profile: haut_bassin
           label: "Qgis Allier et Loire amont"
-          additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
-          icon: "qgis_icone_eploire.ico"
+          additional_arguments: "--noversioncheck"
+          action: create_or_restore
+          icon: "images/qgis_icone_eploire.ico"        
         - profile: loire_aval
           label: "Qgis Loire aval"
-          additional_arguments: "--noversioncheck"
           desktop: true
           start_menu: true
-          icon: "qgis_icone_eploire.ico"
+          additional_arguments: "--noversioncheck"
+          action: create_or_restore
+          icon: "images/qgis_icone_eploire.ico"      
         - profile: maine
-          label: "Qgis Bassin de la Maine"
-          additional_arguments: "--noversioncheck"
+          label: "QGis bassin de la Maine"
           desktop: true
           start_menu: true
-          icon: "qgis_icone_eploire.ico"
-        - profile: support
-          label: "Qgis essentiel BV Loire"
           additional_arguments: "--noversioncheck"
-          desktop: true
-          start_menu: true
-          icon: "qgis_icone_eploire.ico"
-
-  - name: Installe les écrans de démarrage de QGIS (splash screens) par profil
+          action: create_or_restore
+          icon: "images/qgis_icone_eploire.ico"                                   
+  - name: Set splash screen
     uses: splash-screen-manager
     with:
       action: create_or_restore
       strict: false
-
-
