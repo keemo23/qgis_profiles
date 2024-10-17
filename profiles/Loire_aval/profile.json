@@ -8,7 +8,7 @@
   "splash": "images/splash_LoireAval.png",
   "qgisMinimumVersion": "3.28.4",
   "qgisMaximumVersion": "3.99.10",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "plugins": [
     {
       "name": "Layers menu from project",
@@ -22,12 +22,12 @@
       "folder_name": "cadastre",
       "official_repository": true,
       "plugin_id": 397,
-      "version": "1.19.1"
+      "version": "1.20.0"
     },
     {
       "name": "French Locator Filter",
       "folder_name": "french_locator_filter",
-      "version": "1.1.0",
+      "version": "1.1.",
       "official_repository": true,
       "plugin_id": 1846
     }
@@ -39,5 +39,13 @@
       "official_repository": true,
       "plugin_id": 2691
     }  
+    ,
+    {
+      "name": "Data Plotly",
+      "folder_name": "DataPlotly",
+      "version": "v4.1.0",
+      "official_repository": true,
+      "plugin_id": 1247
+    } 
   ]
 }
