@@ -8,7 +8,7 @@
   "splash": "images/splash_AxeLoire.png",
   "qgisMinimumVersion": "3.28.4",
   "qgisMaximumVersion": "3.99.10",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "plugins": [
     {
       "name": "Layers menu from project",
@@ -43,7 +43,7 @@
     {
       "name": "Data Plotly",
       "folder_name": "DataPlotly",
-      "version": "v4.1.0",
+      "version": "4.1.0",
       "official_repository": true,
       "plugin_id": 1247
     }       
