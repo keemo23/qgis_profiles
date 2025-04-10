@@ -9,21 +9,21 @@
   "splash": "images/splash_BVLoire.png",
   "qgisMinimumVersion": "3.28.4",
   "qgisMaximumVersion": "3.99.10",
-  "version": "3.1.1",
-  "plugins": [
+  "version": "3.2.0",
+ "plugins": [
     {
       "name": "Layers menu from project",
       "folder_name": "menu_from_project",
       "official_repository": true,
       "plugin_id": 43,
-      "version": "2.1.0"
+      "version": "2.4.1"
     },
     {
       "name": "cadastre",
       "folder_name": "cadastre",
       "official_repository": true,
       "plugin_id": 397,
-      "version": "1.20.0"
+      "version": "2.0.1"
     },
     {
       "name": "French Locator Filter",
@@ -39,14 +39,22 @@
       "version": "v1.2.3",
       "official_repository": true,
       "plugin_id": 2691
-    } 
+    }
     ,
     {
       "name": "Data Plotly",
       "folder_name": "DataPlotly",
-      "version": "4.1.0",
+      "version": "4.2.0",
       "official_repository": true,
       "plugin_id": 1247
-    }      
+    } 
+    ,
+    {
+      "name": "Selection as Filter",
+      "folder_name": "SelectionFilter",
+      "version": "1.0",
+      "official_repository": true,
+      "plugin_id": 3084
+    }             
   ]
 }
