@@ -17,7 +17,7 @@ steps:
   - name: Set environment variables
     uses: manage-env-vars
     with:
-      - name: QDT_QGIS_EXE_PATH 
+      - name: QDT_QGIS_EXE_PATH
         action: "add"
         scope: "user"
         value: "C:\\QGIS\\3_28\\bin\\qgis-ltr-bin.exe"
@@ -26,7 +26,7 @@ steps:
   - name: Set environment variables
     uses: manage-env-vars
     with:
-      - name: QDT_QGIS_EXE_PATH  
+      - name: QDT_QGIS_EXE_PATH
         action: "add"
         scope: "user"
         value: "C:\\QGIS\\3_34\\bin\\qgis-ltr-bin.exe"
@@ -88,28 +88,28 @@ steps:
           start_menu: true
           additional_arguments: "--noversioncheck"
           action: create_or_restore
-          icon: "images/qgis_icone_eploire.ico"    
+          icon: "images/qgis_icone_eploire.ico"
         - profile: haut_bassin
           label: "Qgis Allier et Loire amont"
           desktop: true
           start_menu: true
           additional_arguments: "--noversioncheck"
           action: create_or_restore
-          icon: "images/qgis_icone_eploire.ico"        
+          icon: "images/qgis_icone_eploire.ico"
         - profile: loire_aval
           label: "Qgis Loire aval"
           desktop: true
           start_menu: true
           additional_arguments: "--noversioncheck"
           action: create_or_restore
-          icon: "images/qgis_icone_eploire.ico"      
+          icon: "images/qgis_icone_eploire.ico"
         - profile: maine
           label: "QGis bassin de la Maine"
           desktop: true
           start_menu: true
           additional_arguments: "--noversioncheck"
           action: create_or_restore
-          icon: "images/qgis_icone_eploire.ico"                                   
+          icon: "images/qgis_icone_eploire.ico"
   - name: Set splash screen
     uses: splash-screen-manager
     with:
