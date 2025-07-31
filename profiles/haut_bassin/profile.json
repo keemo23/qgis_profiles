@@ -46,7 +46,7 @@
       "version": "4.2.0",
       "official_repository": true,
       "plugin_id": 1247
-    } 
+    }
     ,
     {
       "name": "Selection as Filter",
@@ -54,6 +54,6 @@
       "version": "1.0",
       "official_repository": true,
       "plugin_id": 3084
-    }             
+    }
   ]
 }
